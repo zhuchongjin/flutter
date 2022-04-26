@@ -12,11 +12,15 @@ import './cart_demo.dart';
 import './navigator_view.dart';
 import './navigator_view01.dart';
 import './navigator_view02.dart';
+import './Base/BottomTabBar.dart';
 
 void main() {
   runApp(new MaterialApp(
     title: 'Navigation Basics',
-    home: new HomeVC(),
+    theme: ThemeData.light(),
+    // home: new HomeVC(),
+
+    home: BottomNavigationWidget(),
   ));
 }
 
