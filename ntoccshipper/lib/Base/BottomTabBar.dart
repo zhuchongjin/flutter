@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../Pages/HomeWidget.dart';
-import '../Pages/OrderWidget.dart';
-import '../Pages/MineWidget.dart';
+import '../Pages/Home/HomeWidget.dart';
+import '../Pages/Order/OrderWidget.dart';
+import '../Pages/Mine/MineWidget.dart';
 
 class BottomNavigationWidget extends StatefulWidget {
   BottomNavigationWidget({Key? key}) : super(key: key);
