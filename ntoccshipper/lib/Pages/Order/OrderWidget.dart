@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './StudyDemoWidgets/StudyDemos.dart';
+import './ExampleWidgets/ExampleWidgets.dart';
 
 class OrderScreen extends StatelessWidget {
   @override
@@ -41,7 +42,12 @@ class OrderList extends StatelessWidget {
           child: ListTile(
             title: Text('账户信息'),
             subtitle: Text('部分小实例应用'),
+            leading: Icon(Icons.list_alt),
           ),
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ExampleWidgets()));
+          },
         )
       ],
     );

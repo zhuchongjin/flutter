@@ -30,26 +30,51 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
       body: list[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
           items: [
+            // BottomNavigationBarItem(
+            //   icon: Icon(
+            //     Icons.home,
+            //     color: _BottomNavigationColor,
+            //   ),
+            //   label: '首页',
+            // ),
             BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-                color: _BottomNavigationColor,
-              ),
-              label: '首页',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.list_alt,
-                color: _BottomNavigationColor,
-              ),
-              label: '运单',
-            ),
-            BottomNavigationBarItem(
-                icon: Icon(
-                  Icons.person,
-                  color: _BottomNavigationColor,
+                icon: Image(
+                  image: AssetImage('images/home_n.png'),
+                  width: 18.0,
+                  height: 18.0,
                 ),
-                label: '我的'),
+                activeIcon: Image(
+                  image: AssetImage('images/home_p.png'),
+                  width: 18.0,
+                  height: 18.0,
+                ),
+                label: '首页'),
+
+            BottomNavigationBarItem(
+                icon: Image(
+                  image: AssetImage('images/order_n.png'),
+                  width: 18.0,
+                  height: 18.0,
+                ),
+                activeIcon: Image(
+                  image: AssetImage('images/order_p.png'),
+                  width: 18.0,
+                  height: 18.0,
+                ),
+                label: '运单'),
+
+            BottomNavigationBarItem(
+                icon: Image(
+                  image: AssetImage('images/mine_n.png'),
+                  height: 18.0,
+                  width: 18.0,
+                ),
+                activeIcon: Image(
+                  image: AssetImage('images/mine_p.png'),
+                  height: 18.0,
+                  width: 18.0,
+                ),
+                label: '我的')
           ],
           currentIndex: _currentIndex,
           onTap: (int index) {
